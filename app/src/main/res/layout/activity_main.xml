@@ -4,11 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <TextView
-        android:layout_width="wrap_content"
+
+    <EditText
+        android:id="@+id/personName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/peopleNameHint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Button
+        android:id="@+id/helloButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/helloButton"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="@string/welcomeMessage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
 </LinearLayout>
